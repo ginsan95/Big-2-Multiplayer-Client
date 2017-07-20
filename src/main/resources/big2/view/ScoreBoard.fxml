@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="big2.controller.ScoreBoardController">
+   <children>
+      <ImageView fx:id="bgImgView" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER_RIGHT" layoutX="341.0" layoutY="116.0" text="Score Board" textAlignment="RIGHT" wrapText="false">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="nextRoundButton" alignment="CENTER_RIGHT" layoutX="355.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleNextRound" text="Next Round" textAlignment="CENTER" />
+      <Label fx:id="winnerLabel" layoutX="355.0" layoutY="174.0" prefHeight="21.0" text="winner has win the game">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <GridPane layoutX="341.0" layoutY="240.0" prefHeight="150.0" prefWidth="435.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="61.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="267.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER_RIGHT" text="Player" textAlignment="RIGHT" />
+            <Label alignment="CENTER_RIGHT" text="Score" textAlignment="RIGHT" GridPane.columnIndex="1" />
+            <Label fx:id="playerLabel1" alignment="CENTER_RIGHT" text="Player 1" textAlignment="RIGHT" GridPane.rowIndex="1" />
+            <Label fx:id="playerLabel2" alignment="CENTER_RIGHT" text="Player 2" textAlignment="RIGHT" GridPane.rowIndex="2" />
+            <Label fx:id="playerLabel3" alignment="CENTER_RIGHT" text="Player 3" textAlignment="RIGHT" GridPane.rowIndex="3" />
+            <Label fx:id="playerLabel4" alignment="CENTER_RIGHT" text="Player 4" textAlignment="RIGHT" GridPane.rowIndex="4" />
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="236.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="scoreLabel1" alignment="CENTER_RIGHT" layoutX="409.0" layoutY="281.0" text="Score 1" textAlignment="RIGHT" />
+                  <Label fx:id="earnedScoreLabel1" alignment="CENTER_RIGHT" layoutX="458.0" layoutY="282.0" text="Score 1" textAlignment="RIGHT" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="302.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label fx:id="scoreLabel2" alignment="CENTER_RIGHT" layoutX="409.0" layoutY="301.0" text="Score 2" textAlignment="RIGHT" />
+                  <Label fx:id="earnedScoreLabel2" alignment="CENTER_RIGHT" layoutX="458.0" layoutY="302.0" text="Score 2" textAlignment="RIGHT" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label fx:id="scoreLabel3" alignment="CENTER_RIGHT" layoutX="409.0" layoutY="321.0" text="Score 3" textAlignment="RIGHT" />
+                  <Label fx:id="earnedScoreLabel3" alignment="CENTER_RIGHT" layoutX="458.0" layoutY="322.0" text="Score 3" textAlignment="RIGHT" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Label fx:id="scoreLabel4" alignment="CENTER_RIGHT" layoutX="409.0" layoutY="341.0" text="Score 4" textAlignment="RIGHT" />
+                  <Label fx:id="earnedScoreLabel4" alignment="CENTER_RIGHT" layoutX="458.0" layoutY="342.0" text="Score 4" textAlignment="RIGHT" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <Button layoutX="472.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleReturnRoom" text="Return Room" />
+      <Label fx:id="winningMsgLabel" layoutX="355.0" layoutY="210.0" prefHeight="21.0" text="winning message">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

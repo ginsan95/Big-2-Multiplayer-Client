@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="542.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Game Guide" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane cacheShape="false" layoutX="10.0" layoutY="45.0" prefHeight="487.0" prefWidth="552.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="45.0">
+         <content>
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" text="Main Menu&#10;1) Connect to the server to play the game.&#10;2) You can change the server address at the setting button in the main menu.&#10;&#10;Lobby&#10;1) Click on the host game button to host a game and wait for players to join the room.&#10;2) Select an available game room and click on the join room button to join a room.&#10;&#10;Host Game Room&#10;1) Wait for all the player to be ready before start a game.&#10;&#10;Player Game Room&#10;1) Click on the ready button to indicate that you are ready and wait for the host to start the game.&#10;&#10;Gameplay&#10;1) The bottom section display the cards that you currently have.&#10;2) The current player in turn will have his/her name indicated in red colour..&#10;3) When it is your turn, the play card and pass buttons will be enabled.&#10;4) To select a card, click on the card, and click on the card again to unselect it.&#10;5) Click on the play card button to play a combination of card.&#10;6) Click on the pass button to pass the turn.&#10;7) Click on the reset button to easily unselected all the cards.&#10;&#10;Score Board&#10;1) The score board displays the points of all players.&#10;2) It also displayed who won the game for the turn and each player losing and winning score.&#10;3) If you are a host, click on the next button to continue to the next round.&#10;4) Click on the return room button to return back to the game room and reset everyone scores.&#10;&#10;Big 2 Rules&#10;1) The first turn must start with a combination of cards which include the  3 of Diamond card.&#10;2) Therefore, the player who has the 3 of Diamond card will always be the first person to play.&#10;3) To play a card, the card must be higher than the current card in the table and has the same amount of cards.&#10;    The ranking of the smallest card to biggest card is as following:&#10;    Number = 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2    &#10;    Suit = Diamonds, Clubs, Hearts, Spade&#10;    The ranking of the combination is as following from highest to lowest.&#10;    i) Straight Flush - 5S, 6S, 7S, 8S, 9S, 10S&#10;    iI) Four of a Kind - KD, KC, KH, KS, 5D&#10;    iii) Full House - 7D, 7H, 7S, JD, JS&#10;    iv) Flush - 3S, 6S, 7S, JS, AS&#10;    v) Straight - 7D, 8D, 9S, 10C, JH&#10;    vi) Four Cards - 10D, 10C, 10H, 10S&#10;    vii) Triple - 3D, 3C, 3H&#10;    viii) Pair - QH, QS&#10;    ix) Single - 2S&#10;4) All combinations look at the highest cards when there are conflict except Flush.&#10;5) Flush looks at the suit of the cards then only the number of the card when conflict.&#10;6) You can pass a turn when you do not wish or unable to play a card.&#10;7) You cannot pass during the first turn, or when everyone else passed their turn.&#10;8) When everyone passes their turn, the table cards will be resetted and you can play any valid combination of cards.&#10;9) The game ends when a player has finished playing all of his/her cards.&#10;10) If a player has all the 4 &quot;2 cards&quot; in his/her hands, he/she will directly win that particular round.&#10;11) If the next player in turn has only 1 card left and the player did not did his/her best in preventing the player from&#10;     winning, he/she will be considered as performing an illegal assist.&#10;&#10;Score Calculations&#10;1) Each players starts with 500 points.&#10;2) The loser will have their tally deducted based on the number of cards currently in his.her hand.&#10;3) The winner will have the loser deducted points into his/her tally.&#10;4) Each card in the player hand represent 1 point.&#10;5) If the total cards are more than or equal to 10, the deducted points will be doubled.&#10;6) If the total cards are exactly 13 cards, the deducted points will be tripled instead.&#10;7) If the player performed an illegal assist, he/she will receive an additional of 1.5x multiplication to the deducted points.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

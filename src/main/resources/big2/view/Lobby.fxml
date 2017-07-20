@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="big2.controller.LobbyController">
+   <children>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="14.0" text="Lobby" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="67.0" text="Name:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerNameTextField" layoutX="86.0" layoutY="72.0" prefHeight="25.0" prefWidth="505.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="60.0" />
+      <ListView fx:id="hostListView" layoutX="10.0" layoutY="119.0" prefHeight="411.0" prefWidth="730.0" style="-fx-font-size: 20px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="60.0" />
+      <ButtonBar layoutX="10.0" layoutY="544.0" nodeOrientation="LEFT_TO_RIGHT">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#handleHostGame" prefHeight="42.0" prefWidth="119.0" text="Host Game">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleJoinRoom" prefHeight="42.0" prefWidth="119.0" text="Join Room">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleQuitGame" prefHeight="42.0" prefWidth="119.0" text="Quit Game">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
